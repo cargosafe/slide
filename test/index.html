@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Slide</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../build/build.css" />
+    <script src="../build/build.js"></script>
+  </head>
+  <body>
+    <script>
+      var Slide = require('slide');
+      var dom = require('dom');
+      var lorem = require('lorem');
+
+      var slide = new Slide;
+      document.body.appendChild(slide.el);
+
+      var menu = dom('<nav class="menu"><a class="menu-item" href="http://cargosafe.no/">Cargosafe</a></nav>');
+      menu.appendTo(slide.sidebar);
+
+      var content = dom('<h1>Lorem ipsum</h1><p>'+lorem(1000));
+      content.appendTo(slide.content);
+
+    </script>
+  </body>
+</html>

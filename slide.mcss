@@ -1,0 +1,37 @@
+
+.slide-wrapper {
+  display: flex;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+  .slide {
+    position: absolute;
+    width: 260px;
+    height: 100%;
+  }
+
+  .hidden .slide-inner-wrapper {
+    transform: translate3d(0, 0, 0);
+  }
+  .slide-inner-wrapper {
+    flex: 1;
+    transform: translate3d(260px, 0, 0);
+    transition: transform .3s ease;
+    height: 100%;
+  }
+  .slide-content {
+    height: 100%;
+  }
+
+    .slide-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+      .slide-toggle {
+          cursor: pointer;
+          outline: none;
+        }
+

@@ -1,0 +1,98 @@
+@import url('http://code.ionicframework.com/ionicons/1.4.1/css/ionicons.min.css');
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+
+/*
+ * Typography.
+ */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Lato, Helvetica;
+  font-size: 1.6em;
+  line-height: 1.5em;
+}
+
+/*
+ * Structural.
+ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+main {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 4em;
+}
+
+.slide-header {
+  height: 4em;
+}
+
+.menu-item {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  margin: 1em;
+  padding: 1em 1.5em;
+}
+
+/*
+ * Appearance.
+ */
+
+body,
+main {
+  background: -webkit-linear-gradient(top, rgb(230, 230, 230), rgb(245, 245, 245));
+  color: rgb(50, 50, 50);
+}
+
+.menu-item {
+  border-top: solid 1px rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  opacity: .8;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.slide {
+  background-color: rgb(90, 180, 140);
+  -webkit-box-shadow: inset -1px 0 3px rgba(0, 0, 0, .3);
+  box-shadow: inset -1px 0 3px rgba(0, 0, 0, .3);
+}
+
+.slide a:hover,
+.slide a:active {
+  opacity: 1;
+}
+
+.slide-header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .2)), to(rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0));
+  background: linear-gradient(top, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0));
+}
+
+.slide-toggle {
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: Ionicons;
+  font-size: 3em;
+  padding: 0 .3em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+.slide-toggle::before {
+  content: '\f20e';
+}

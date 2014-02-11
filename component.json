@@ -1,0 +1,21 @@
+{
+  "name": "slide",
+  "repo": "cargosafe/slide",
+  "description": "Slide component",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/classes": "*",
+    "component/event": "*",
+    "segmentio/view": "*"
+  },
+  "development": {
+    "component/dom": "*",
+    "stagas/lorem": "*"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": ["index.js"],
+  "templates": ["template.html"],
+  "styles": ["slide.css"]
+}
