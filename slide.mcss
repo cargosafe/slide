@@ -4,7 +4,6 @@
   overflow-x: hidden;
   height: 100%;
 }
-
   .slide {
     position: absolute;
     width: 260px;
@@ -23,15 +22,4 @@
   .slide-content {
     height: 100%;
   }
-
-    .slide-header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-    }
-      .slide-toggle {
-          cursor: pointer;
-          outline: none;
-        }
 

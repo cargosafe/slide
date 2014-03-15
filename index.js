@@ -27,7 +27,5 @@ Slide.prototype.toggle = function(){
 Slide.on('construct', function(slide){
   slide.content = slide.find('.slide-content');
   slide.sidebar = slide.find('.slide');
-  var button = slide.button = slide.find('button');
-  events.bind(button, 'click', slide.toggle.bind(slide));
 });
 
